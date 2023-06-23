@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url(./shara\ desert.jpg);
+    background-size: cover;
+}
+.container-1{
+    display: flex;
+    justify-content: space-around;
+   /* padding: 30px;*/
+}
+.navbar{
+   display: flex;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+.navbar-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 40px;
+    
+}
+.navbar-icon{
+    margin-top: 15px;
+}
+.left-container{
+    padding-top: 150px;
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 50px;
+    
+}
+.saha{
+    font-size: 80px;
+    width: 500px;
+    line-height: 40px;
+    color: white;
+}
+.lorem{
+    font-size: 10pxpx;
+    color: white;
+}
+.butt{
+    font-size: small;
+    font-style: normal;
+    height: 50px;
+    
+    text-align: center;
+    border: 0px solid white;
+    background-color: white;
+    width: 30%;
+    border-radius: 50px;
+    color: black;
+
+}
+.right-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+   /* grid-template-rows: 200px 200px;*/
+    gap: 20px;
+}
+
+
+.box{
+    height: 200px;
+    border: 2px solid gray;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: beige;
+    padding-left: 10px;
+}
+.box:hover{
+    transform:translateY(-15px);
+}
+.box1{
+    background: url(./pic-1.png);
+    background-size: cover;
+}
+.box2{
+    background: url(./pic-2.png);
+    background-size: cover;
+}
+.box3{
+    background: url(./pic-3.png);
+    background-size: cover;
+}
+.box4{
+    background: url(./pic-4.png);
+    background-size: cover;
+}
+/*Tablet View*/
+@media screen and (min-width:500px) and (max-width:900px){
+    .container-2{
+        flex-direction: column;
+    }
+    .right-container{
+        grid-template-columns: 400px;
+        grid-template-rows: 200px 200px 200px 200px;
+    }
+}
+/*Mobile View*/
+@media screen and (min-width:250px) and (max-width:500px){
+    .container-2{
+        flex-direction: column;
+    }
+    .right-container{
+        grid-template-columns: 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+    }
+    .navbar-menu ul li{
+        display: block;
+    }
+}
