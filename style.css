@@ -40,12 +40,12 @@ a{
 }
 .saha{
     font-size: 80px;
-    width: 500px;
+    width: 200px;
     line-height: 40px;
     color: white;
 }
 .lorem{
-    font-size: 10pxpx;
+    font-size: 15px;
     color: white;
 }
 .butt{
@@ -56,7 +56,7 @@ a{
     text-align: center;
     border: 0px solid white;
     background-color: white;
-    width: 30%;
+    width: 150px;
     border-radius: 50px;
     color: black;
 
